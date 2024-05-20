@@ -19,7 +19,7 @@ def is_game_over(board):
         if row.count(row[0]) == size and row[0] != ' ':
             return True
 
-    # sprawdzenie diagonali
+    # sprawdzenie kolumny
     for col in range(size):
         if all(board[row][col] == board[0][col] and board[0][col] != ' ' for row in range(size)):
             return True

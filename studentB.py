@@ -3,10 +3,10 @@ import time
 
 def is_player_starting():
     #pobieranie i uzywanie decyzji uzytkownika
-    choice = input("Czy ty chcesz zaczac? (yes/no): ").strip().lower()
-    if choice == 'yes':
+    choice = input("Czy ty chcesz zaczac? (tak/nie): ").strip().lower()
+    if choice == 'tak':
         return True
-    elif choice == 'no':
+    elif choice == 'nie':
         return False
     else:
         print("Odpowiedz niewlasciwa.")
